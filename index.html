@@ -1,124 +1,124 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>
-		Sudoku!
-		</title>
-		<link href='http://fonts.googleapis.com/css?family=Alegreya+SC:400,400italic' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="./style.css">
-	</head>
-	
-	<body>
-		<h1>Sudoku</h1>
-		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ROW1 -->
-		<form id="solve-sudoku">
-			<table id="square1" border="1" summary="a sudoku board">
-				<tr class="row1">
-					<td><input id="cell0" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell1" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell2" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell3" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell4" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell5" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell6" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell7" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell8" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-				</tr>
-				<tr class="row2">
-					<td><input id="cell9" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell10" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell11" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell12" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell13" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell14" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell15" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell16" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell17" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-				</tr>
-				<tr class="row3">
-					<td><input id="cell18" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell19" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell20" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell21" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell22" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell23" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell24" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell25" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell26" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-				</tr>
-				<tr class="row4">
-					<td><input id="cell27" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell28" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell29" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell30" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell31" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell32" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell33" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell34" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell35" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-				</tr>
-				<tr class="row5">
-					<td><input id="cell36" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell37" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell38" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell39" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell40" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell41" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell42" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell43" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell44" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-				</tr>
-				<tr class="row6">
-					<td><input id="cell45" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell46" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell47" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell48" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell49" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell50" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell51" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell52" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell53" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-				</tr>
-				<tr class="row7">
-					<td><input id="cell54" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell55" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell56" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell57" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell58" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell59" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell60" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell61" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell62" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-				</tr>
-				<tr class="row8">
-					<td><input id="cell63" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell64" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell65" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell66" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell67" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell68" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell69" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell70" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell71" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-				</tr>
-				<tr class="row9">
-					<td><input id="cell72" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell73" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell74" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell75" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell76" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell77" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell78" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell79" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-					<td><input id="cell80" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
-				</tr>
-			</table>
-			<br/>
-			<input id="sudoku-solver-button" type="submit" value="solve the board"></input>
-			<input id="sudoku-clear-button" type="submit" value="clear the board"></input>
-			<p id="loading"></p>
-		</body>
-		<script src='./boardchecker.js'></script>
-		<script src='./solver.js'></script>
-		<script src='./miniquery.js'></script>
-	</html>
+  <head>
+    <title>
+    Sudoku!
+    </title>
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+SC:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  
+  <body>
+    <h1>Sudoku</h1>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ROW1 -->
+    <form id="solve-sudoku">
+      <table id="square1" border="1" summary="a sudoku board">
+        <tr class="row1">
+          <td><input id="cell0" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell1" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell2" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell3" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell4" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell5" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell6" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell7" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell8" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+        </tr>
+        <tr class="row2">
+          <td><input id="cell9" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell10" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell11" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell12" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell13" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell14" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell15" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell16" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell17" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+        </tr>
+        <tr class="row3">
+          <td><input id="cell18" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell19" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell20" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell21" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell22" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell23" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell24" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell25" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell26" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+        </tr>
+        <tr class="row4">
+          <td><input id="cell27" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell28" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell29" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell30" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell31" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell32" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell33" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell34" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell35" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+        </tr>
+        <tr class="row5">
+          <td><input id="cell36" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell37" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell38" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell39" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell40" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell41" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell42" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell43" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell44" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+        </tr>
+        <tr class="row6">
+          <td><input id="cell45" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell46" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell47" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell48" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell49" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell50" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell51" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell52" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell53" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+        </tr>
+        <tr class="row7">
+          <td><input id="cell54" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell55" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell56" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell57" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell58" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell59" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell60" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell61" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell62" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+        </tr>
+        <tr class="row8">
+          <td><input id="cell63" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell64" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell65" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell66" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell67" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell68" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell69" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell70" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell71" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+        </tr>
+        <tr class="row9">
+          <td><input id="cell72" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell73" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell74" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell75" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell76" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell77" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell78" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell79" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+          <td><input id="cell80" class="cell" pattern="^[1-9]$" title="number from 1-9"type="text"></input></td>
+        </tr>
+      </table>
+      <br/>
+      <input id="sudoku-solver-button" type="submit" value="solve the board"></input>
+      <input id="sudoku-clear-button" type="submit" value="clear the board"></input>
+      <p id="loading"></p>
+    </body>
+    <script src='./boardchecker.js'></script>
+    <script src='./solver.js'></script>
+    <script src='./miniquery.js'></script>
+  </html>
